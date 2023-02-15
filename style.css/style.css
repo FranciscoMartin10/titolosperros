@@ -1,0 +1,41 @@
+h1{
+    color: rgb(238, 215, 7);
+    text-align: center;
+}
+
+.backcolor-gray{
+    background-color: rgb(109, 99, 99);
+}
+
+nav ul{
+    font-size: 20px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.encabezado{
+    background-color: black;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 15px;
+}
+
+h2{
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    color: rgba(214, 16, 171, 0.815);
+    font-family: 'Times New Roman', Times, serif;
+}
