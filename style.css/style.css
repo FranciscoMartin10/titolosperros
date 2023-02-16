@@ -21,8 +21,10 @@ a{
 }
 
 nav ul li{
-    display: inline-block;
-    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px
 }
 
 h2{
