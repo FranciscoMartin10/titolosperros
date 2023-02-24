@@ -43,3 +43,9 @@ p{
     color: rgba(214, 16, 171, 0.815);
     font-family: 'Times New Roman', Times, serif;
 }
+
+@media screen and (max-width: 576px){
+    ul(
+        justify-content: left;
+    )
+}
