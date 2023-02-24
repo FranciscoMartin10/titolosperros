@@ -20,10 +20,12 @@ a{
     background-color: black;
 }
 
-nav ul li{
+ul{
+    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px
 }
 
