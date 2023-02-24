@@ -44,8 +44,8 @@ p{
     font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (max-width: 576px){
-    ul(
-        justify-content: left;
-    )
+@media screen and (max-widht: 576px) {
+    ul{
+        flex-direction: column;
+    }
 }
