@@ -4,78 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Original Gangster</title>
 </head>
 <body>
-    <header class="header-index">
-        <div class="encabezado">
-            <img src="./IMAGENES/OG-LOGO.jpg" alt="">
+   
+  <header>
+      <div class="logo">
+            <img src="./assets/images/logo1.png" alt="logo">
+          </div>
             <h1>ORIGINAL GANGSTER</h1>
+            <nav class="navbar navbar-expand-lg nav-mia">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Mujeres</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Hombres</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+    </header> 
+   
+    <main> 
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-mio" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/carousel1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/carousel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/carousel3.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./Paginas/nike.html">Nike</a></li>
-                <li><a href="./Paginas/adidas.html">Adidas</a></li>
-                <li><a href="./Paginas/puma.html">Puma</a></li>
-                <li><a href="./Paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Ultimos lanzamientos</h2>
-        <img src="./IMAGENES/JORDAN-4.jpg" alt="Jordan4">
-        <img src="./IMAGENES/ADIDAS-FORUM.jpg" alt="AdidasForum">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NljGurzPM2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    
-       <section>
-        <h3>Lo ultimo en botines</h3>
-        <p>NIKE</p>
-        <img src="./IMAGENES/botin-nike-1.jpg" alt="">
-        <img src="./IMAGENES/botin-nike-2.jpg" alt="">
-       </section>
-       <section>
-        <p>ADIDAS</p>
-        <img src="./IMAGENES/botin-adidas-1.jpg" alt="">
-        <img src="./IMAGENES/botin-adidas-2.jpg" alt="">
-       </section>
-       <section>
-        <p>PUMA</p>
-        <img src="./IMAGENES/botin-puma-1.jpg" alt="">
-        <img src="./IMAGENES/botin-puma-2.jpg" alt="">
-       </section>
+      </div> 
+      <div class="container">
+        <div class="text">
+          <h2>Título del texto</h2>
+          <p>Contenido del texto</p>
+        </div>
+        <div class="image">
+          <img src="./assets/images/contenedor1.jpg" alt="Descripción de la imagen">
+        </div>
+      </div>      
+      <h2>Ultimas Novedades</h2>
+      <div class="tarjetas">
+        <div class="card tarjeta" style="width: 18rem;">
+          <img src="./assets/images/basura/sneaker-puma-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card tarjeta" style="width: 18rem;">
+          <img src="./assets/images/basura/ojotas-nike-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card tarjeta" style="width: 18rem;">
+          <img src="./assets/images/basura/botin-nike-4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card tarjeta" style="width: 18rem;">
+          <img src="./assets/images/basura/botin-adidas-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="block">
+            <h3>Título del bloque 1</h3>
+            <p>Texto del bloque 1</p>
+            <button type="button1" class="btn btn-secondary btn-lg">Large button</button>
+            <img src="./assets/images/caja2.jpg" alt="Descripción de la imagen 1">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="block">
+            <h3>Título del bloque 2</h3>
+            <p>Texto del bloque 2</p>
+            <button type="button1" class="btn btn-secondary btn-lg">Large button</button>
+            <img src="./assets/images/caja3.jpg" alt="Descripción de la imagen 2">
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="backcolor-gray">
-         <table>
-            <tr>
-                <th>Institucional</th>
-                <th>Ayuda</th>
-                <th>Redes Sociales</th>
-                <th>Centro de Atencion al Cliente</th>
-            </tr>
-            <tr>
-                <td>Quienes Somos</td>
-                <td>Preguntas Frecuentes</td>
-                <td>Facebook</td>
-                <td>Lunes a Sabados de 9 a 20hs</td>
-            </tr>
-            <tr>
-                <td>Politica de Privacidad</td>
-                <td>¿Como Comprar?</td>
-                <td>Instagram</td>
-                <td>WhatsApp</td>
-            </tr>
-            <tr>
-                <td>Terminos y Condiciones</td>
-                <td>Sucursales</td>
-                <td>Twitter</td>
-                <td>0810-888-6475</td>
-            </tr>
-         </table>
-
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143317.89653296972!2d-87.85601854518642!3d41.88789924203548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d3ecaa9b54f%3A0x9b93f0068cf00344!2sUnited%20Center!5e0!3m2!1ses-419!2sar!4v1674622603798!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>
+    
+    
+  
 </body>
 
 

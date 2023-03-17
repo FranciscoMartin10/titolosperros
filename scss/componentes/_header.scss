@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-secundario;
+    padding: 20px; 
+    h1{
+       margin: 0;
+    }
+}
+
+.logo {
+    width: 50px;
+    margin-right: 20px
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+            
+
+.nav-mia{
+    margin-left: auto;
+    color: $color-secundario
+}

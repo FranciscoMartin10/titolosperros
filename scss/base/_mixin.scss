@@ -1,0 +1,9 @@
+@mixin estilo-boton($fondo, $texto) {
+    background-color: $fondo;
+    color: $texto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,79 @@
+body{
+    background-color: $color-secundario;
+    h2{
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+.carousel-mio {
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+.carousel-mio .carousel-item {
+    padding: 10px;
+}
+
+.container {
+    display: flex; /* Para que los elementos estén en línea */
+    width: 100%; /* Para que la caja ocupe toda la fila */
+    height: 200px; /* Altura de la caja */
+    border: 1px solid black;
+    background-color: black;
+  }
+  
+  .text {
+    width: 50%; /* Ancho del lado del texto */
+    padding: 20px; /* Espaciado interno */
+    background-color: white;
+  }
+  
+  .image {
+    width: 50%; /* Ancho del lado de la imagen */
+    overflow: hidden; /* Para que la imagen no se salga de la caja */
+  }
+  
+  img {
+    width: 100%; /* Para que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Para que la altura se ajuste proporcionalmente */
+  }
+
+  .tarjetas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Para alinear verticalmente las tarjetas */
+    margin: 20px 0; /* Margen superior e inferior de la fila */
+  }
+  
+  .tarjeta {
+    width: 25%; /* Ancho de cada tarjeta */
+    padding: 20px;
+    margin: 0 10px; /* Espacio vacío horizontal entre las tarjetas */
+    border: 1px solid black;
+  }
+  
+  .tarjeta img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .col-6 {
+    grid-column: span 1;
+  }
+   
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .block img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  
