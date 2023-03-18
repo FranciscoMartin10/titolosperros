@@ -5,8 +5,10 @@ header {
   justify-content: space-between;
   background-color: #f1f3f5;
   padding: 20px;
+  font-family: "Montserrat", sans-serif, Arial;
 }
-header h1 {
+
+h1 {
   margin: 0;
 }
 
@@ -88,10 +90,17 @@ a:hover {
 }
 body {
   background-color: #f1f3f5;
+  font-family: "Oswald", sans-serif, Arial;
+  font-display: swap;
 }
-body h2 {
+
+.h2 {
   margin-top: 50px;
   text-align: center;
+}
+
+.h5, h5 {
+  font-size: 50px;
 }
 
 main {
@@ -99,7 +108,8 @@ main {
 }
 
 .carousel-mio {
-  width: 70%;
+  width: 100%;
+  height: 50%;
   margin: 0 auto;
 }
 
@@ -107,12 +117,32 @@ main {
   padding: 10px;
 }
 
+.carrousel-texto1 {
+  position: absolute;
+  bottom: 0; /* Mueve el elemento cerca del borde inferior */
+  z-index: 1;
+  color: white;
+  padding: 100px;
+}
+
+.carrousel-texto {
+  position: absolute;
+  top: 0; /* Mueve el texto al borde superior del contenedor */
+  z-index: 1; /* Asegura que el texto aparezca encima de la imagen */
+  color: white; /* Ajusta el color del texto para que sea legible en la imagen */
+  padding: 100px; /* Ajusta el espacio alrededor del texto según sea necesario */
+}
+
 .container {
   display: flex; /* Para que los elementos estén en línea */
   width: 100%; /* Para que la caja ocupe toda la fila */
-  height: 200px; /* Altura de la caja */
+  height: 250px; /* Altura de la caja */
   border: 1px solid black;
   background-color: black;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .text {
@@ -122,7 +152,9 @@ main {
 }
 
 .image {
-  width: 50%; /* Ancho del lado de la imagen */
+  display: block;
+  margin: 0 auto;
+  width: 60%; /* Ancho del lado de la imagen */
   overflow: hidden; /* Para que la imagen no se salga de la caja */
 }
 
@@ -131,18 +163,21 @@ img {
   height: auto; /* Para que la altura se ajuste proporcionalmente */
 }
 
-.tarjetas {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Para alinear verticalmente las tarjetas */
-  margin: 20px 0; /* Margen superior e inferior de la fila */
+.tarjeta {
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
-.tarjeta {
-  width: 25%; /* Ancho de cada tarjeta */
-  padding: 20px;
-  margin: 0 10px; /* Espacio vacío horizontal entre las tarjetas */
-  border: 1px solid black;
+.tarjeta h3 {
+  margin-top: 0;
+}
+
+.tarjeta p {
+  margin-bottom: 0;
 }
 
 .tarjeta img {
@@ -454,6 +489,22 @@ button[type=submit]:hover {
 .textp {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .tarjeta {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .tarjetas {
+    text-align: center;
+  }
+  .carrousel-texto {
+    display: none;
+  }
+  .carrousel-texto1 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
