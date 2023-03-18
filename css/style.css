@@ -540,6 +540,9 @@ button[type=submit]:hover {
 }
 
 @media (max-width: 767px) {
+  #nul4 {
+    display: none;
+  }
   #nul3 {
     display: none;
   }
