@@ -421,4 +421,39 @@ button[type=submit]:hover {
   background-color: #45a049;
 }
 
+.terms {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.terms__title {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.content-box {
+  margin-top: 50px;
+}
+
+.subheading {
+  font-size: 1.5rem;
+}
+
+.textp {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
 /*# sourceMappingURL=style.css.map */
