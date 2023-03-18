@@ -1,4 +1,5 @@
 body{
+
     background-color: $color-secundario;
     font-family: 'Oswald', sans-serif, Arial;
     font-display: swap;
@@ -450,6 +451,12 @@ main {
   }
   
   @media (max-width: 767px) {
+    .box-description{
+      display: none;
+    }
+    .box-description-main{
+      display: none;
+    }
     #nul4{
       display: none;
     }
