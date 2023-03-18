@@ -226,7 +226,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: #e6e6e6;
   }
   
@@ -310,6 +310,7 @@ main {
   
   .box-title-new {
     margin-top: 10px;
+
   }
 
   .title-container {
@@ -449,7 +450,15 @@ main {
   }
   
   @media (max-width: 767px) {
-
+    #nul3{
+      display: none;
+    }
+    #nul2{
+      display: none;
+    }
+    .container-new{
+     display: none;
+    }
     #h2-hombre{
       font-size: 25px; 
       padding: 5px;
