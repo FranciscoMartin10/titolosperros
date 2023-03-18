@@ -266,4 +266,61 @@ button {
   margin-top: 20px;
 }
 
+.big-box {
+  display: grid;
+  grid-template-rows: auto 1fr; /* La imagen ocupa toda la fila */
+  grid-template-columns: repeat(3, 1fr); /* La caja ocupa tres columnas */
+  grid-gap: 20px; /* Espacio entre las filas y columnas */
+}
+
+.big-box-img {
+  grid-row: 1/2; /* La imagen ocupa la primera fila */
+  grid-column: 1/4; /* La imagen ocupa las tres columnas */
+  width: 100%;
+  height: auto;
+}
+
+.big-box-content {
+  grid-row: 2/3; /* El contenido ocupa la segunda fila */
+  grid-column: 1/4; /* El contenido ocupa las tres columnas */
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.big-box-title {
+  margin-top: 0;
+}
+
+.big-box-text {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.box-new {
+  width: calc(25% - 20px);
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.box-img-new {
+  width: 100%;
+  height: auto;
+}
+
+.box-title-new {
+  margin-top: 10px;
+}
+
+.title-container {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
