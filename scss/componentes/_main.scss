@@ -3,6 +3,7 @@ body{
     font-family: 'Oswald', sans-serif, Arial;
     font-display: swap;
   }
+
 .h2{
     margin-top: 50px;
     text-align: center;
@@ -137,15 +138,24 @@ main {
     margin-top: 20px;
   }
 
+
+////////////////////////////////////////////* html mujeres *//////////////////////////////////
+
   .caja-grande {
+    font-size: 40px;
     display: grid;
     grid-template-columns: 1fr 2fr; /* Dos columnas, la primera ocupa un tercio y la segunda dos tercios */
     grid-template-rows: auto 1fr; /* Dos filas, la primera se ajusta al contenido y la segunda ocupa el resto del espacio disponible */
     grid-gap: 20px; /* Espacio entre las cajas de texto e imagen */
     margin: 20px 0; /* Margen vertical entre las cajas grandes */
   }
-  
+  .h2-mujer{
+    font-size: 50px;
+    padding: 20px;
+  }
   .texto {
+    font-size: 30px;
+    padding: 20px;
     grid-row: 1; /* Ubicar en la primera fila */
     grid-column: 1; /* Ubicar en la primera columna */
   }
@@ -426,6 +436,26 @@ main {
   }
   
   @media (max-width: 767px) {
+  
+      .caja-grande {
+        grid-template-columns: 1fr;
+      }
+    
+      .texto {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;        
+      }
+      #nul{
+        display: none;
+      }
+    
+      .imagen {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+    }
+    
     .hide{
       display: none;
     }
@@ -452,4 +482,3 @@ main {
       overflow: hidden; /* Para que la imagen no se salga de la caja */
       padding: 5px;
   }
-}

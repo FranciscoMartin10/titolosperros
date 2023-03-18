@@ -230,6 +230,7 @@ img {
 }
 
 .caja-grande {
+  font-size: 40px;
   display: grid;
   grid-template-columns: 1fr 2fr; /* Dos columnas, la primera ocupa un tercio y la segunda dos tercios */
   grid-template-rows: auto 1fr; /* Dos filas, la primera se ajusta al contenido y la segunda ocupa el resto del espacio disponible */
@@ -237,7 +238,14 @@ img {
   margin: 20px 0; /* Margen vertical entre las cajas grandes */
 }
 
+.h2-mujer {
+  font-size: 50px;
+  padding: 20px;
+}
+
 .texto {
+  font-size: 30px;
+  padding: 20px;
   grid-row: 1; /* Ubicar en la primera fila */
   grid-column: 1; /* Ubicar en la primera columna */
 }
@@ -519,32 +527,53 @@ button[type=submit]:hover {
 }
 
 @media (max-width: 767px) {
-  .hide {
-    display: none;
+  .caja-grande {
+    grid-template-columns: 1fr;
   }
-  .tarjeta {
-    width: 100%;
-    margin: 10px 0;
-  }
-  .tarjetas {
+  .texto {
+    grid-column: 1/2;
+    grid-row: 2/3;
     text-align: center;
   }
-  .carrousel-texto {
+  #nul {
     display: none;
   }
-  .carrousel-texto1 {
-    display: none;
+  .imagen {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
-  .text {
-    margin: 10px;
-  }
-  .image {
-    display: block;
-    margin: 0 auto;
-    width: 60%; /* Ancho del lado de la imagen */
-    overflow: hidden; /* Para que la imagen no se salga de la caja */
-    padding: 5px;
-  }
+}
+.hide {
+  display: none;
+}
+
+.tarjeta {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.tarjetas {
+  text-align: center;
+}
+
+.carrousel-texto {
+  display: none;
+}
+
+.carrousel-texto1 {
+  display: none;
+}
+
+.text {
+  margin: 10px;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 60%; /* Ancho del lado de la imagen */
+  overflow: hidden; /* Para que la imagen no se salga de la caja */
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
