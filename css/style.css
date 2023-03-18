@@ -4,7 +4,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #f1f3f5;
-  padding: 20px;
+  padding: 30px;
   font-family: "Montserrat", sans-serif, Arial;
 }
 
@@ -156,6 +156,7 @@ main {
   margin: 0 auto;
   width: 60%; /* Ancho del lado de la imagen */
   overflow: hidden; /* Para que la imagen no se salga de la caja */
+  padding: 25px;
 }
 
 img {
@@ -504,6 +505,16 @@ button[type=submit]:hover {
   }
   .carrousel-texto1 {
     display: none;
+  }
+  .text {
+    margin: 10px;
+  }
+  .image {
+    display: block;
+    margin: 0 auto;
+    width: 60%; /* Ancho del lado de la imagen */
+    overflow: hidden; /* Para que la imagen no se salga de la caja */
+    padding: 5px;
   }
 }
 

@@ -63,6 +63,7 @@ main {
     margin: 0 auto;
     width: 60%; /* Ancho del lado de la imagen */
     overflow: hidden; /* Para que la imagen no se salga de la caja */
+    padding: 25px;
   }
   
   img {
@@ -415,6 +416,14 @@ main {
     .carrousel-texto1 {
       display: none;
     }
-
+    .text {
+     margin: 10px;
+    }
+    .image {
+      display: block;
+      margin: 0 auto;
+      width: 60%; /* Ancho del lado de la imagen */
+      overflow: hidden; /* Para que la imagen no se salga de la caja */
+      padding: 5px;
   }
-
+}
