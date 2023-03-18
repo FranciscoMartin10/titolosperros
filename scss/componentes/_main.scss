@@ -246,7 +246,17 @@ main {
     margin-top: 20px;
   }
   
+  ////////////////////////////////////////////* html hombres *//////////////////////////////////
+  
+  #h2-hombre{
+    font-size: 70px; 
+    padding: 15px;
+  }
+  #p-hombre{
+    padding: 15px;
+  }
   .big-box {
+    position: relative;
     display: grid;
     grid-template-rows: auto 1fr; /* La imagen ocupa toda la fila */
     grid-template-columns: repeat(3, 1fr); /* La caja ocupa tres columnas */
@@ -261,17 +271,20 @@ main {
   }
   
   .big-box-content {
-    grid-row: 2 / 3; /* El contenido ocupa la segunda fila */
-    grid-column: 1 / 4; /* El contenido ocupa las tres columnas */
-    background-color: #f2f2f2;
-    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    color: white;
   }
   
   .big-box-title {
     margin-top: 0;
+    font-size: 200px
   }
   
   .big-box-text {
+    font-size: 100px;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
@@ -436,7 +449,18 @@ main {
   }
   
   @media (max-width: 767px) {
-  
+
+    #h2-hombre{
+      font-size: 25px; 
+      padding: 5px;
+    }
+    #p-hombre{
+      padding: 5px;
+      font-size: 15px;
+    }
+    .hide2{
+      display: none;
+    }
       .caja-grande {
         grid-template-columns: 1fr;
       }
@@ -454,8 +478,15 @@ main {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
       }
+      .big-box-title {
+        margin-top: 0;
+        font-size: 30px
+      }
+      
+      .big-box-text {
+        font-size: 15px;
+      }
     }
-    
     .hide{
       display: none;
     }
