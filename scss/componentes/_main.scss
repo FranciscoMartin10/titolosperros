@@ -71,11 +71,19 @@ main {
     height: auto; /* Para que la altura se ajuste proporcionalmente */
   }
 
+  #mi-meo{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    letter-spacing: 3px;
+
+  }
   .tarjeta {
+    text-align: center;
     display: inline-block;
     width: 250px;
-    margin: 10px;
-    padding: 10px;
+    margin: 80px;
+    padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
   }
@@ -96,9 +104,24 @@ main {
   }
 
 
-  
+  #pad{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    color: white;
+  }
+  .hide{
+    font-size: 25px;
+    color: white;
+  }
   .col-6 {
     grid-column: span 1;
+    background-color: black;
+    padding: 20px;
+  }
+
+  .but{
+    background-color: gray;
   }
    
   .block {
@@ -403,6 +426,9 @@ main {
   }
   
   @media (max-width: 767px) {
+    .hide{
+      display: none;
+    }
     .tarjeta {
       width: 100%;
       margin: 10px 0;
