@@ -619,8 +619,8 @@ button[type=submit]:hover {
 .image {
   display: block;
   margin: 0 auto;
-  width: 60%; /* Ancho del lado de la imagen */
-  overflow: hidden; /* Para que la imagen no se salga de la caja */
+  width: 60%; 
+  overflow: hidden;
   padding: 5px;
 }
 
