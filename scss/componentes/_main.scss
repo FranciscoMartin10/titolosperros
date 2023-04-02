@@ -449,6 +449,14 @@ main {
     font-size: 1.2rem;
     line-height: 1.5;
   }
+
+  ///////////////////////////////////html contacto//////////////////////////////////////
+
+  .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
   
   @media (max-width: 767px) {
     .box-description{
@@ -528,7 +536,7 @@ main {
     .image {
       display: block;
       margin: 0 auto;
-      width: 60%; /* Ancho del lado de la imagen */
-      overflow: hidden; /* Para que la imagen no se salga de la caja */
+      width: 60%;
+      overflow: hidden;
       padding: 5px;
   }

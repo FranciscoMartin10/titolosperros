@@ -538,6 +538,11 @@ button[type=submit]:hover {
   line-height: 1.5;
 }
 
+.form-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 767px) {
   .box-description {
     display: none;
@@ -619,7 +624,7 @@ button[type=submit]:hover {
 .image {
   display: block;
   margin: 0 auto;
-  width: 60%; 
+  width: 60%;
   overflow: hidden;
   padding: 5px;
 }
