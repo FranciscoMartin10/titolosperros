@@ -411,6 +411,7 @@ main {
     margin-bottom: 20px;
 }
   
+
   @media (max-width: 1700px) {
     .caja-grande {
       grid-template-columns: 1fr;
@@ -426,9 +427,30 @@ main {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
-}
+  }
 
+  @media (max-width: 1192px) {
+    #h2-hombre{
+      font-size: 40px; 
+      padding: 5px;
+    }
 
+    #p-hombre{
+      padding: 5px;
+      font-size: 25px;
+    }
+
+    .big-box-title {
+      margin-top: 0;
+      font-size: 30px
+    }
+    
+    .big-box-text {
+      font-size: 15px;
+    }
+  }
+
+  
 
 
   @media (max-width: 767px) {

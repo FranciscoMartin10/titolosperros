@@ -598,6 +598,23 @@ button[type=submit]:hover {
     grid-row: 1/2;
   }
 }
+@media (max-width: 1192px) {
+  #h2-hombre {
+    font-size: 40px;
+    padding: 5px;
+  }
+  #p-hombre {
+    padding: 5px;
+    font-size: 25px;
+  }
+  .big-box-title {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .big-box-text {
+    font-size: 15px;
+  }
+}
 @media (max-width: 767px) {
   .box-description, .box-description-main, #nul4, #nul3, #nul2, .container-new, .hide2, #nul, .hide, .carrousel-texto, .carrousel-texto1 {
     display: none;
