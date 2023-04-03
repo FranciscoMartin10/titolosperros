@@ -1,6 +1,4 @@
 
-
-
 footer {
     background-color: map-get($colors, secondary);
     color: $color-secundario;
@@ -42,7 +40,7 @@ footer {
   }
   
   a {
-    color: #fff;
+    color: $color-secundario;
     text-decoration: none;
   }
   

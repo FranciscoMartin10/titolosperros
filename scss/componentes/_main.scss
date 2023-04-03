@@ -2,7 +2,6 @@
 @import '../base/mixin';
 
 body{
-
     background-color: $color-secundario;
     font-family: 'Oswald', sans-serif, Arial;
     font-display: swap;
@@ -136,10 +135,9 @@ main {
     padding: 20px;
   }
   .texto {
+    @extend .texto-estilo2;
     font-size: 30px;
     padding: 20px;
-    grid-row: 1;
-    grid-column: 1; 
   }
   
   .imagen {
@@ -156,8 +154,7 @@ main {
   }
   
   .textod {
-    grid-row: 1; 
-    grid-column: 1; 
+   @extend .texto-estilo2;
   }
   
   .imagend {
@@ -167,16 +164,13 @@ main {
   }
   
   .imagend img {
-    width: 100%; 
-    height: auto; 
+    @extend .img-estilo; 
     display: block; 
     object-fit: cover; 
   }
   
   .apalancador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .estilo1;
     padding: 30px;
   }
   
@@ -199,19 +193,15 @@ main {
     max-width: 100%;
   }
   .caja-horizontal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .estilo1;
     width: 100%;
     height: 200px;
-    background-color: #e6e6e6;
+    background-color: $color-cuarto;
   }
   
   .contenido {
-    display: flex;
+    @extend .estilo1;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
   }
   
@@ -241,10 +231,9 @@ main {
   }
   
   .big-box-img {
+    @extend .img-estilo;
     grid-row: 1 / 2; 
     grid-column: 1 / 4; 
-    width: 100%;
-    height: auto;
   }
   
   .big-box-content {
@@ -252,7 +241,7 @@ main {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    color: white;
+    color: $color-secundario;
   }
   
   .big-box-title {
@@ -276,13 +265,12 @@ main {
   
   .box-new {
     width: calc(25% - 20px);
-    background-color: #f2f2f2;
+    background-color: $color-quinto;
     padding: 20px;
   }
   
   .box-img-new {
-    width: 100%;
-    height: auto;
+    @extend .img-estilo;
   }
   
   .box-title-new {
@@ -299,16 +287,11 @@ main {
   }
   
   .main-box {
-    display: flex;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 20px;
+    @include main-estilo();
   }
-  
+
   .box-img-main {
-    width: 50%;
-    height: auto;
-    margin-right: 20px;
+    @include img-estilo2();
   }
   
   .box-text-main {
@@ -328,16 +311,11 @@ main {
   }
   
   .main-box-right {
-    display: flex;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 20px;
+    @include main-estilo();
   }
   
   .box-img {
-    width: 50%;
-    height: auto;
-    margin-right: 20px;
+    @include img-estilo2();
   }
   
   .box-text {
@@ -374,7 +352,7 @@ main {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid $color-tercero;
     box-sizing: border-box;
   }
   
@@ -433,21 +411,28 @@ main {
     margin-bottom: 20px;
 }
   
-  
+  @media (max-width: 1700px) {
+    .caja-grande {
+      grid-template-columns: 1fr;
+    }
+
+    .texto {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      text-align: center;        
+    }
+
+    .imagen {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+}
+
+
+
+
   @media (max-width: 767px) {
-    .box-description{
-      display: none;
-    }
-    .box-description-main{
-      display: none;
-    }
-    #nul4{
-      display: none;
-    }
-    #nul3{
-      display: none;
-    }
-    #nul2{
+    .box-description, .box-description-main, #nul4, #nul3, #nul2, .container-new, .hide2, #nul, .hide, .carrousel-texto, .carrousel-texto1{
       display: none;
     }
     .container-new{
@@ -461,9 +446,6 @@ main {
       padding: 5px;
       font-size: 15px;
     }
-    .hide2{
-      display: none;
-    }
       .caja-grande {
         grid-template-columns: 1fr;
       }
@@ -473,10 +455,7 @@ main {
         grid-row: 2 / 3;
         text-align: center;        
       }
-      #nul{
-        display: none;
-      }
-    
+      
       .imagen {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -489,10 +468,6 @@ main {
       .big-box-text {
         font-size: 15px;
       }
-    }
-    .hide{
-      display: none;
-    }
     .tarjeta {
       width: 100%;
       margin: 10px 0;
@@ -500,12 +475,6 @@ main {
     .tarjetas {
       text-align: center;
   }
-    .carrousel-texto {
-      display: none;
-    }
-    .carrousel-texto1 {
-      display: none;
-    }
     .text {
      margin: 10px;
     }
@@ -516,3 +485,4 @@ main {
       overflow: hidden;
       padding: 5px;
   }
+}

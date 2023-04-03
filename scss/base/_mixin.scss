@@ -15,3 +15,16 @@
     grid-template-rows: auto $valor3;
     font-size: $valor4;
   }
+
+  @mixin main-estilo(){
+    display: flex;
+    align-items: center;
+    background-color:  $color-quinto;
+    padding: 20px;
+  }
+  
+  @mixin img-estilo2(){
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}

@@ -1,3 +1,5 @@
+@import '../base/mixin';
+
 header{
     display: flex;
     align-items: center;
@@ -17,8 +19,7 @@ header{
 }
 
 .logo img {
-    width: 100%;
-    height: auto;
+    @extend .img-estilo;
 }
             
 
