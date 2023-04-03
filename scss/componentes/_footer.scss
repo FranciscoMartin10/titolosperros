@@ -1,7 +1,9 @@
 
+
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: map-get($colors, secondary);
+    color: $color-secundario;
     padding: 50px 0;
     text-align: center;
   }
